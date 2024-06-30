@@ -1,0 +1,280 @@
+/*Google Fonts - Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background: #eeeceb;
+}
+
+footer{
+	position: fixed;
+	background: #14085c;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+footer::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 100px;
+	height: 1px;
+	width: 100%;
+	background: #afafb6;
+}
+footer .content{
+	max-width: 1250px;
+	margin: auto;
+	padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+footer .content .logo-detalis{
+	color: #fff;
+	font-size: 30px;
+}
+footer .content .media-icons{
+	display: flex;
+}
+footer .content .media-icons a{
+	height: 40px;
+	width: 40px;
+	margin: 0 8px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-size: 17px;
+	text-decoration: none;
+	transition: all .5s ease;
+}
+
+footer .content .media-icons a:nth-child(1){
+	background: #426782;
+}
+
+footer .content .media-icons a:nth-child(1):hover{
+	background: #fff;
+	color: #426782;
+}
+
+footer .content .media-icons a:nth-child(2){
+	background: #1ba1f2;
+}
+
+footer .content .media-icons a:nth-child(2):hover{
+	background: #fff;
+	color: #1ba1f2;
+}
+
+footer .content .media-icons a:nth-child(3){
+	background: #e1306c;
+}
+
+footer .content .media-icons a:nth-child(3):hover{
+	background: #fff;
+	color: #e1306c;
+}
+
+footer .content .media-icons a:nth-child(4){
+	background: #00ff85;
+}
+
+footer .content .media-icons a:nth-child(4):hover{
+	background: #fff;
+	color: #00ff85;
+}
+
+footer .content .media-icons a:nth-child(5){
+	background: #ff0000;
+}
+
+footer .content .media-icons a:nth-child(5):hover{
+	background: #fff;
+	color: #ff0000;
+}
+
+footer .content .link-boxes{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .content .link-boxes .box{
+	width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name{
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 10px;
+	position: relative;
+}
+.content .link-boxes .box .link_name::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	height: 2px;
+	width: 35px;
+	background: #fff;
+}
+footer .content .link-boxes .box li{
+	list-style: none;
+	margin: 6px 0px;
+}
+footer .content .link-boxes .box li a{
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none;
+	opacity: .8;
+	transition: all .4s ease;
+}
+footer .content .link-boxes .box li a:hover{
+	text-decoration: underline;
+	opacity: 1;
+}
+
+footer .content .link-boxes .input-box{
+	margin-right: 55px	;
+}
+.link-boxes .input-box input{
+	height: 40px;
+	width: calc(100% + 55px);
+	outline: none;
+	border: 2px solid #afaf86;
+	background: #14085c;
+	border-radius: 4px;
+	padding: 0 15px;
+	font-size: 15px;
+	color: #fff;
+	margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+	color: #afaf86;
+	font-size: 16px;
+}
+
+.link-boxes .input-box input[type="button"]{
+	background: #fff;
+	color: #14085c;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 4px 0;
+	opacity: .8;
+	cursor: pointer;
+	transition: all .4s ease;
+}
+.input-box input[type="button"]:hover{
+	opacity: 1;
+}
+
+footer .button-detalis{
+	width: 100%;
+	background: #0f0844;
+}
+footer .button-detalis .button-text{
+	max-width: 1250px;
+	margin: auto;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+ 
+.button-detalis .button-text span,
+.button-detalis .button-text a{
+	font-size: 14px;
+	font-weight: 300;
+	color: #fff;
+	opacity: .8;
+	text-decoration: none;
+}
+ 
+.button-detalis .button-text a:hover{
+	opacity: 1;
+	text-decoration: underline;
+}
+.button-detalis .button-text a{
+	margin-right: 10px;
+}
+
+@media (max-width: 900px){
+	footer .content .link-boxes{
+		flex-wrap: wrap;
+
+	}
+	.content .link-boxes .input-box{
+		width: 40%;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 700px){
+	footer{
+		position: relative;
+	}
+	footer .content .logo-detalis{
+		font-size: 26px;
+	}
+	footer .content .media-icons a{
+		height: 35px;
+		width: 35px;
+		font-size: 14px;
+		line-height: 35px;
+	}
+	footer .content .link-boxes .box{
+		width: calc(100% / 3 - 10px);
+	}
+	footer .content .link-boxes .input-box{
+		width: 60%;
+	}
+	.button-detalis .button-text span,
+	.button-detalis .button-text a{
+		font-size: 12px;
+	}
+}
+
+
+@media (max-width: 520px){
+	footer::before{
+		top: 145px;
+	}
+	footer .content .top{
+		flex-direction: column;
+	}
+	footer .top .media-icons{
+		margin-top: 10px;
+	}
+	footer .content .link-boxes .box{
+		width: calc(100% / 2 - 10px);
+	}
+	footer .content .link-boxes .input-box{
+		width: 100%;
+	}
+	footer .button-text .copyright_text{
+		font-size: 13px;
+		margin-left: -20px;
+	}
+	footer .button-text .policy_terms{
+		font-size: 10px;
+		margin-right: -12px;
+	}
+	footer hr{
+		margin-right: 8px;
+	}
+}
